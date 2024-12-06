@@ -35,8 +35,8 @@ const sendEmailNotification = async (name, email, phone) => {
   });
 
   const mailOptions = {
-    from: "dyushes0007@gmail.com", // Ваша електронна адреса
-    to: "dyushes0007@gmail.com", // Отримувач (ваша адреса для отримання заявок)
+    from: process.env.GMAIL_USER, // Ваша електронна адреса
+    to: process.env.GMAIL_USER, // Отримувач (ваша адреса для отримання заявок)
     subject: "Нова заявка!",
     text: `Нова заявка!\nІм'я: ${name}\nПошта: ${email}\nТелефон: ${phone}`,
   };
