@@ -1,0 +1,22 @@
+.header {
+  font-family: Gramatika, sans-serif;
+  padding-top: 2.25rem;
+
+  font-size: 30px;
+  background-color: #010101;
+
+  p {
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.5rem;
+    padding-left: 10px;
+    padding: 5px;
+    border: 1px solid #ffffff65;
+    border-radius: 15px;
+  }
+  &-logo__activ {
+    color: #010101;
+    -webkit-text-stroke: 0.3px red; /* обводка тексту */
+    text-stroke: 2px red; /* обводка */
+  }
+}

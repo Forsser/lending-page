@@ -1,0 +1,103 @@
+/* Стилізація контейнера форми */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Займає всю висоту екрану */
+  background-color: #f4f7fc; /* Світло-сірий фон */
+}
+
+/* Стилізація самої форми */
+.form {
+  background-color: #fcffd6; /* Білий фон форми */
+  border-radius: 10px; /* Закруглені кути */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Тінь для глибини */
+  padding: 30px;
+  width: 400px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Заголовок форми */
+.form h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Стилізація текстових полів */
+.input-field {
+  padding: 12px 15px;
+  border: 1px solid #ddd; /* Легкий бордер для полів */
+  border-radius: 5px; /* Закруглені кути */
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* При фокусі на полях змінюється колір бордера */
+.input-field:focus {
+  border-color: #007bff; /* Синій колір бордера */
+  outline: none;
+}
+
+/* Стилізація кнопки */
+.submit-button {
+  background-color: #007bff; /* Синій фон */
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* При наведенні на кнопку змінюється її колір */
+.submit-button:hover {
+  background-color: #0056b3; /* Трохи темніший синій */
+}
+
+/* Стилізація помилок */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+/* Стилізація для input[type="file"] */
+.file-input {
+  padding: 12px 15px;
+  border: 1px solid #ddd; /* Легкий бордер для полів */
+  border-radius: 5px; /* Закруглені кути */
+  font-size: 16px;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+/* При фокусі на кнопці зміна кольору бордера */
+.file-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Стилізація кнопки завантаження файлу */
+.file-input::file-selector-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* При наведенні на кнопку змінюється її колір */
+.file-input::file-selector-button:hover {
+  background-color: #0056b3;
+}

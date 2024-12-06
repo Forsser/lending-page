@@ -1,0 +1,77 @@
+.clsta {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 11.25rem;
+  padding-bottom: 7.81rem;
+
+  .container {
+    display: flex;
+  }
+
+  &-title-container {
+    width: 60rem;
+    position: relative;
+  }
+  &-title__main {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 5.38rem;
+    font-weight: 400;
+    line-height: 110%;
+  }
+
+  &-text {
+    margin-right: 10px;
+  }
+
+  &-title__subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: start;
+
+    width: 16.5rem;
+    font-size: 1.25rem;
+    line-height: 110%;
+  }
+  &-img {
+    z-index: -1;
+    width: 48.31rem;
+    height: 53.31rem;
+    position: absolute;
+    inset: -11.25rem -37.25rem auto auto;
+  }
+  &-button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 18.31rem;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 90%;
+    transition: all 0.2s linear;
+
+    cursor: pointer;
+    color: var(--colors--red);
+    &:hover {
+      color: rgb(176, 0, 0);
+    }
+
+    &:hover svg {
+      transform: translateX(100%);
+
+      stroke: rgb(176, 0, 0);
+    }
+
+    svg {
+      transition: transform 0.2s linear;
+    }
+
+    .card-button__arrow--before {
+      top: -1px;
+    }
+  }
+}
