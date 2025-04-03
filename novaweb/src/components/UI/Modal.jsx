@@ -76,7 +76,11 @@ const Modal = ({ active, SetModalActive }) => {
                   type="phone"
                   className="modal__input"
                 />
-                <button type="submit" className="modal__submit-button">
+                <button
+                  type="submit"
+                  className="modal__submit-button"
+                  onClick={() => SetModalActive(false)}
+                >
                   <span className="modal__submit-text">Залишити заявку</span>
                 </button>
               </Form>
